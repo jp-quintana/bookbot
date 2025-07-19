@@ -10,3 +10,10 @@ def get_char_count(text):
     else:
       d[char] = 1
   return d
+
+def get_sorted_dictionaries(d):
+  ds = []
+  for c in d:
+    ds.append({"char": c, "num": d[c]})
+  ds.sort(key=lambda x: x["num"], reverse=True)
+  return ds
