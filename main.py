@@ -2,7 +2,7 @@ from stats import get_num_words, get_char_count, get_sorted_dictionaries
 from sys import argv, exit
 
 if len(argv) < 2:
-    print("Usage: python main.py <path_to_book>")
+    print("Usage: python3 main.py <path_to_book>")
     exit(1)
 
 def get_book_text(filepath):
